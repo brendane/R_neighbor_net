@@ -198,7 +198,7 @@ plot_network = function(net_obj,
             xx = x[vertices[, 'leaf']]
             yy = y[vertices[, 'leaf']]
         }
-        do.call(points, c(list('x'=x, 'y'=y), pts))
+        do.call(points, c(list('x'=xx, 'y'=yy), pts))
     }
 
     if(!is.null(symbol)) {
